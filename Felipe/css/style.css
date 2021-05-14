@@ -1,0 +1,248 @@
+:root {
+  --primaria: #018282;
+  --cinza-ecuro: #343a40;
+  --cinza-claro: #444;
+  --cinza-texto: #ccc;
+  --braco: #fff;
+  --hover: #d96302;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+.row {
+  margin: 0;
+}
+.container {
+  padding: 40px 0;
+}
+p,
+li,
+label {
+  color: var(--cinza-claro);
+  font-size: 1rem;
+}
+.hiden {
+  display: none;
+}
+.main-title {
+  font-size: 2.5em;
+  margin-bottom: 60px;
+  text-align: center;
+}
+.main-title::after {
+  content: "";
+  border-bottom: 2px solid var(--cinza-claro);
+  width: 15%;
+  position: absolute;
+  top: 60px;
+  left: 42.5%;
+}
+/* ------------------------------------------- barra de navegação ---------------------------------------------------*/
+.navbar {
+  background-color: var(--cinza-ecuro);
+}
+#logo {
+  max-width: 150px;
+}
+#nav-container .navbar-nav a {
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  letter-spacing: 0.1rem;
+  font-weight: 900;
+  color: var(--cinza-texto);
+  padding-right: 0.8rem;
+  padding-left: 0.8rem;
+  transition: 0.5s;
+}
+#nav-container .navbar-nav a:hover {
+  color: var(--primaria);
+}
+
+/* ------------------------------------------- fim barra de navegação ---------------------------------------------------*/
+
+/* ----------------------------------------------  Slider ---------------------------------------------------*/
+
+#mainSlider {
+  margin: auto -15px;
+  background-image: url("../img/bg-slider.png");
+  background-size: cover;
+  height: 550px;
+}
+#mainSlider img {
+  margin: 0 auto;
+}
+#mainSlider .carousel-inner .carousel-caption {
+  position: absolute;
+  bottom: 5px;
+}
+.carousel-inner .carousel-caption p {
+  color: var(--cinza-texto);
+  font-size: 1.2rem;
+  font: 400;
+  max-width: 700px;
+  margin: 15px auto;
+  margin-bottom: 75px;
+}
+/* -------------------------------------------Fim  Slider ---------------------------------------------------*/
+
+/* ------------------------------------------- Botões ---------------------------------------------------*/
+
+.main-btn {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+  color: var(--braco);
+  background-color: var(--primaria);
+  padding: 15px 20px;
+  border: 3px solid var(--primaria);
+  border-radius: 15px;
+  transition: 0.5s;
+}
+.main-btn:hover {
+  text-decoration: none;
+  background-color: transparent;
+  color: var(--hover);
+  border-color: var(--hover);
+}
+.dark-btn {
+  color: var(--primaria);
+  border-color: var(--primaria);
+  width: 100%;
+  background: transparent;
+  text-align: center;
+}
+.dark-btn:hover {
+  background: transparent;
+  color: var(--hover);
+  border-color: var(--hover);
+}
+/* ------------------------------------------- Fim Botões ---------------------------------------------------*/
+
+/* ------------------------------------------- Sobres ---------------------------------------------------*/
+.sobre {
+  margin-top: 50px;
+}
+.sobre-desc {
+  display: flex;
+  max-width: 75vw;
+  margin: 0 auto;
+  flex-flow: column wrap;
+}
+.sobre-box {
+  text-align: center;
+  padding: 0 40px;
+  margin: 60px 0;
+}
+.sobre-box i {
+  font-size: 60px;
+  padding-bottom: 25px;
+  color: var(--primaria);
+  transition: 0.5s;
+}
+.sobre-box:hover > i {
+  color: var(--hover);
+}
+/* ------------------------------------------- Fim sobre ---------------------------------------------------*/
+.card {
+  display: flex;
+  justify-content: center;
+  height: 550px;
+}
+.card img {
+  display: block;
+  width: auto !important;
+  height: 250px;
+  margin: 10px auto;
+}
+.card-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.card-body .about-title {
+  font-size: 1.1em;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: var(--primaria);
+}
+/* ------------------------------------------- Footer ---------------------------------------------------*/
+#contact-area {
+  text-align: center;
+}
+.box-contato {
+  display: flex;
+  gap: 10px;
+  align-items: stretch;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.contact-box i {
+  color: var(--primaria);
+  border: 1px solid var(--primaria);
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+
+.contact-box p {
+  font-size: 1em;
+  margin-bottom: 3em;
+}
+.contact-box a:hover {
+  color: var(--hover);
+}
+.contact-title {
+  color: var(--primaria);
+}
+#contato {
+  display: flex;
+  text-align: left;
+  justify-content: center;
+}
+#contato input,
+#contato textarea {
+  width: 450px;
+}
+
+/* ------------------------------------------- Fim Footer ---------------------------------------------------*/
+
+/* ------------------------------------------- Copy area ---------------------------------------------------*/
+
+#copy-area {
+  background-color: var(--cinza-ecuro);
+  color: var(--cinza-claro);
+}
+#copy-area .container {
+  padding: 10px 0;
+  text-align: center;
+}
+#copy-area .container p {
+  margin-bottom: 0;
+  color: var(--cinza-texto);
+}
+#copy-area .container a {
+  color: var(--cinza-texto);
+}
+#copy-area .container a:hover {
+  color: var(--primaria);
+}
+/* ------------------------------------------- Copy area ---------------------------------------------------*/
+
+#whatsapp {
+  position: fixed;
+  bottom: 40px;
+  right: 20px;
+}
+#whatsapp i {
+  font-size: 4em;
+  color: var(--primaria);
+  transition: 0.5s;
+}
+#whatsapp i:hover {
+  color: #791;
+}
