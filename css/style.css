@@ -193,6 +193,7 @@ label {
 }
 /* ------------------------------------------- Footer ---------------------------------------------------*/
 #contact-area {
+  margin-top: 75px;
   text-align: center;
 }
 .box-contato {
@@ -246,6 +247,7 @@ label {
   text-align: center;
 }
 #copy-area .container p {
+  font-size: 0.88rem;
   margin-bottom: 0;
   color: var(--cinza-texto);
 }
@@ -269,4 +271,20 @@ label {
 }
 #whatsapp i:hover {
   color: #791;
+}
+/* ------------------------------- Page sobre ------------------------------- */
+
+#page-sobre img {
+  margin: 0 auto;
+  width: auto;
+}
+#page-sobre h1 {
+  text-align: center;
+  height: 75%;
+}
+.banner-sobre {
+  margin-bottom: 75px;
+}
+.sobre-box:last-child {
+  margin: 0 auto;
 }
