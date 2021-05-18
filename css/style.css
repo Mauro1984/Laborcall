@@ -2,7 +2,7 @@
   --primaria: #018282;
   --cinza-ecuro: #343a40;
   --cinza-claro: #444;
-  --cinza-texto: #ccc;
+  --cinza-texto: #fff;
   --braco: #fff;
   --hover: #d96302;
 }
@@ -62,27 +62,41 @@ label {
 /* ------------------------------------------- fim barra de navegação ---------------------------------------------------*/
 
 /* ----------------------------------------------  Slider ---------------------------------------------------*/
-
+.container-fluid {
+  padding-right: 0px;
+  padding-left: 0px;
+}
+.gradient {
+  background: linear-gradient(
+    135deg,
+    hsla(180, 98%, 26%, 1) 10%,
+    hsla(180, 50%, 45%, 1) 25%,
+    hsla(180, 74%, 35%, 1) 55%,
+    hsla(180, 100%, 20%, 1) 60%,
+    hsla(180, 100%, 14%, 1) 80%
+  );
+}
 #mainSlider {
-  margin: auto -15px;
-  background-image: url("../img/bg-slider.png");
-  background-size: cover;
-  height: 550px;
+  /* background-image: url("../img/bg-slider.png"); */
+  height: 500px;
 }
 #mainSlider img {
   margin: 0 auto;
+  width: auto;
+  height: 450px;
 }
-#mainSlider .carousel-inner .carousel-caption {
-  position: absolute;
-  bottom: 5px;
+
+.text-slider {
+  color: var(--cinza-texto);
+  text-align: center;
 }
-.carousel-inner .carousel-caption p {
+.text-slider p {
   color: var(--cinza-texto);
   font-size: 1.2rem;
-  font: 400;
-  max-width: 700px;
-  margin: 15px auto;
-  margin-bottom: 75px;
+  text-align: justify;
+  max-width: 500px;
+  margin-top: 55px;
+  margin-bottom: 100px;
 }
 /* -------------------------------------------Fim  Slider ---------------------------------------------------*/
 
@@ -122,7 +136,7 @@ label {
 
 /* ------------------------------------------- Sobres ---------------------------------------------------*/
 .sobre {
-  margin-top: 50px;
+  margin-top: 40px;
 }
 .sobre-desc {
   display: flex;
@@ -145,15 +159,25 @@ label {
   color: var(--hover);
 }
 /* ------------------------------------------- Fim sobre ---------------------------------------------------*/
+/* ----------------------------------------Cards catalágo ------------------------------------------------ */
+
+.box-catalago:last-child {
+  margin: 0 auto;
+}
+.box-catalago {
+  margin: 15px 0 15px 0;
+}
 .card {
   display: flex;
   justify-content: center;
-  height: 550px;
+  height: 75vh;
+  box-shadow: 0 0 1em var(--cinza-ecuro);
 }
+
 .card img {
   display: block;
   width: auto !important;
-  height: 250px;
+  max-height: 250px;
   margin: 10px auto;
 }
 .card-body {
@@ -161,7 +185,7 @@ label {
   flex-direction: column;
   align-items: center;
 }
-.card-body .about-title {
+.about-title {
   font-size: 1.1em;
   text-transform: uppercase;
   font-weight: bold;
