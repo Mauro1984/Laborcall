@@ -285,6 +285,10 @@ label {
 .banner-sobre {
   margin-bottom: 75px;
 }
+.sobre-box{
+ max-width:250px;
+ text-align: justify; 
+}
 .sobre-box:last-child {
   margin: 0 auto;
 }
