@@ -290,8 +290,9 @@ label {
 }
 .sobre-box p{ 
  text-align: justify; 
+  max-width:750px;
 }
 .sobre-box:last-child {
   margin: 0 auto;
-  max-width:550px;
+  max-width:750px;
 }
