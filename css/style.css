@@ -2,11 +2,14 @@
   --primaria: #018282;
   --cinza-ecuro: #343a40;
   --cinza-claro: #444;
-  --cinza-texto: #fff;
+  --texto: #fff;
+  --texto-amarelo: #d8a938;
   --braco: #fff;
   --hover: #d96302;
 }
-
+html {
+  scroll-behavior: smooth;
+}
 body {
   font-family: "Roboto", sans-serif;
 }
@@ -22,6 +25,7 @@ label {
   color: var(--cinza-claro);
   font-size: 1rem;
 }
+
 .hiden {
   display: none;
 }
@@ -47,10 +51,10 @@ label {
 }
 #nav-container .navbar-nav a {
   text-transform: uppercase;
-  font-size: 1.2rem;
+  font-size: 1rem;
   letter-spacing: 0.1rem;
   font-weight: 900;
-  color: var(--cinza-texto);
+  color: var(--texto);
   padding-right: 0.8rem;
   padding-left: 0.8rem;
   transition: 0.5s;
@@ -58,6 +62,31 @@ label {
 #nav-container .navbar-nav a:hover {
   color: var(--primaria);
 }
+
+/* .visiv {
+  position: relative;
+}
+.ocuto {
+  display: block;
+  position: absolute;
+  padding-left: 0px;
+  left: 0;
+  top: 7vh;
+  box-shadow: 2px 2px 11px #000;
+  background-color: var(--cinza-ecuro);
+  z-index: 1;
+}
+
+.ocuto li {
+  list-style: none;
+  width: auto;
+  text-align: left;
+  padding-left: 0px;
+  margin-bottom: 10px;
+}
+
+.visiv:hover .ocuto {
+  display: inline-block; }       Caso seja feito o menu flutuante */
 
 /* ------------------------------------------- fim barra de navegação ---------------------------------------------------*/
 
@@ -87,11 +116,11 @@ label {
 }
 
 .text-slider {
-  color: var(--cinza-texto);
+  color: var(--texto);
   text-align: center;
 }
 .text-slider p {
-  color: var(--cinza-texto);
+  color: var(--texto);
   font-size: 1.2rem;
   text-align: justify;
   max-width: 500px;
@@ -174,7 +203,7 @@ label {
   box-shadow: 0 0 1em var(--cinza-ecuro);
 }
 
-.card img {
+.img-card {
   display: block;
   width: auto !important;
   max-height: 250px;
@@ -195,6 +224,30 @@ label {
 #contact-area {
   margin-top: 75px;
   text-align: center;
+}
+#produtos {
+  background: linear-gradient(
+      221.96deg,
+      rgba(57, 172, 172, 0.47) 39.41%,
+      rgba(255, 255, 255, 0) 67.78%
+    ),
+    linear-gradient(
+      217.72deg,
+      rgba(57, 172, 172, 0.47) 0%,
+      rgba(255, 255, 255, 0) 47.25%
+    ),
+    linear-gradient(38.46deg, #004747 1.01%, rgba(255, 255, 255, 0) 67.63%),
+    #ffffff;
+  padding-bottom: 50px;
+}
+
+#contact-area::before,
+#produtos::before {
+  display: block;
+  content: " ";
+
+  height: 95px;
+  visibility: hidden;
 }
 .box-contato {
   display: flex;
@@ -249,10 +302,10 @@ label {
 #copy-area .container p {
   font-size: 0.88rem;
   margin-bottom: 0;
-  color: var(--cinza-texto);
+  color: var(--texto);
 }
 #copy-area .container a {
-  color: var(--cinza-texto);
+  color: var(--texto);
 }
 #copy-area .container a:hover {
   color: var(--primaria);
@@ -280,19 +333,89 @@ label {
 }
 #page-sobre h1 {
   text-align: center;
-  height: 75%;
+  height: 65%;
 }
 .banner-sobre {
-  margin-bottom: 75px;
+  margin-bottom: 40px;
 }
-.sobre-box i, .sobre-box h3{ 
- text-align: center; 
+
+#page-sobre .sobre-box {
+  padding: 0 100px;
 }
-.sobre-box p{ 
- text-align: justify; 
-  max-width:750px;
+#page-sobre .sobre-box p {
+  text-align: justify;
 }
-.sobre-box:last-child {
+#page-sobre .sobre-box:last-child {
+  max-width: 750px;
   margin: 0 auto;
-  max-width:750px;
+}
+/* ------------------------------- Page produtos ------------------------------- */
+.produtos {
+  background: linear-gradient(
+      270deg,
+      #add09e 37.05%,
+      rgba(255, 255, 255, 0) 50%
+    ),
+    #ffffff;
+}
+
+.produtos .col-12 {
+  background: var(--cinza-ecuro);
+  padding: 15px 0 35px 0;
+}
+.produtos .col-12 h1,
+.produtos .col-12 p {
+  color: var(--texto-amarelo);
+  text-align: center;
+}
+.produtos .col-12 p {
+  text-align: left;
+  margin: 0 auto;
+  max-width: 750px;
+  min-width: 250px;
+}
+.folder #contact-area {
+  margin-top: 0;
+}
+.descricao {
+  color: var(--cinza-claro);
+}
+.descricao h2 {
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  font-weight: 900;
+  text-align: center;
+  margin-top: 2.2rem;
+}
+.descricao ul {
+  list-style: none;
+}
+.descricao ul li {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 1.1rem;
+  padding: 0.88rem 0;
+}
+.descricao i {
+  font-size: 1.5rem;
+  margin-right: 15px;
+}
+.img-folder img {
+  max-height: 450px;
+}
+.icon-dow {
+  font-size: 15rem;
+  display: flex;
+  align-content: center;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+.icon-dow i {
+  padding-bottom: 25px;
+  color: var(--primaria);
+  transition: 0.5s;
+}
+.icon-dow i:hover {
+  color: var(--hover);
 }
