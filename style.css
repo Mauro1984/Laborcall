@@ -1,0 +1,421 @@
+:root {
+  --primaria: #018282;
+  --cinza-ecuro: #343a40;
+  --cinza-claro: #444;
+  --texto: #fff;
+  --texto-amarelo: #d8a938;
+  --braco: #fff;
+  --hover: #d96302;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Roboto", sans-serif;
+}
+.row {
+  margin: 0;
+}
+.container {
+  padding: 40px 0;
+}
+p,
+li,
+label {
+  color: var(--cinza-claro);
+  font-size: 1rem;
+}
+
+.hiden {
+  display: none;
+}
+.main-title {
+  font-size: 2.5em;
+  margin-bottom: 60px;
+  text-align: center;
+}
+.main-title::after {
+  content: "";
+  border-bottom: 2px solid var(--cinza-claro);
+  width: 15%;
+  position: absolute;
+  top: 60px;
+  left: 42.5%;
+}
+/* ------------------------------------------- barra de navegação ---------------------------------------------------*/
+.navbar {
+  background-color: var(--cinza-ecuro);
+}
+#logo {
+  max-width: 150px;
+}
+#nav-container .navbar-nav a {
+  text-transform: uppercase;
+  font-size: 1rem;
+  letter-spacing: 0.1rem;
+  font-weight: 900;
+  color: var(--texto);
+  padding-right: 0.8rem;
+  padding-left: 0.8rem;
+  transition: 0.5s;
+}
+#nav-container .navbar-nav a:hover {
+  color: var(--primaria);
+}
+
+/* .visiv {
+  position: relative;
+}
+.ocuto {
+  display: block;
+  position: absolute;
+  padding-left: 0px;
+  left: 0;
+  top: 7vh;
+  box-shadow: 2px 2px 11px #000;
+  background-color: var(--cinza-ecuro);
+  z-index: 1;
+}
+
+.ocuto li {
+  list-style: none;
+  width: auto;
+  text-align: left;
+  padding-left: 0px;
+  margin-bottom: 10px;
+}
+
+.visiv:hover .ocuto {
+  display: inline-block; }       Caso seja feito o menu flutuante */
+
+/* ------------------------------------------- fim barra de navegação ---------------------------------------------------*/
+
+/* ----------------------------------------------  Slider ---------------------------------------------------*/
+.container-fluid {
+  padding-right: 0px;
+  padding-left: 0px;
+}
+.gradient {
+  background: linear-gradient(
+    135deg,
+    hsla(180, 98%, 26%, 1) 10%,
+    hsla(180, 50%, 45%, 1) 25%,
+    hsla(180, 74%, 35%, 1) 55%,
+    hsla(180, 100%, 20%, 1) 60%,
+    hsla(180, 100%, 14%, 1) 80%
+  );
+}
+#mainSlider {
+  /* background-image: url("../img/bg-slider.png"); */
+  height: 500px;
+}
+#mainSlider img {
+  margin: 0 auto;
+  width: auto;
+  height: 450px;
+}
+
+.text-slider {
+  color: var(--texto);
+  text-align: center;
+}
+.text-slider p {
+  color: var(--texto);
+  font-size: 1.2rem;
+  text-align: justify;
+  max-width: 500px;
+  margin-top: 55px;
+  margin-bottom: 100px;
+}
+/* -------------------------------------------Fim  Slider ---------------------------------------------------*/
+
+/* ------------------------------------------- Botões ---------------------------------------------------*/
+
+.main-btn {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+  color: var(--braco);
+  background-color: var(--primaria);
+  padding: 15px 20px;
+  border: 3px solid var(--primaria);
+  border-radius: 15px;
+  transition: 0.5s;
+}
+.main-btn:hover {
+  text-decoration: none;
+  background-color: transparent;
+  color: var(--hover);
+  border-color: var(--hover);
+}
+.dark-btn {
+  color: var(--primaria);
+  border-color: var(--primaria);
+  width: 100%;
+  background: transparent;
+  text-align: center;
+}
+.dark-btn:hover {
+  background: transparent;
+  color: var(--hover);
+  border-color: var(--hover);
+}
+/* ------------------------------------------- Fim Botões ---------------------------------------------------*/
+
+/* ------------------------------------------- Sobres ---------------------------------------------------*/
+.sobre {
+  margin-top: 40px;
+}
+.sobre-desc {
+  display: flex;
+  max-width: 75vw;
+  margin: 0 auto;
+  flex-flow: column wrap;
+}
+.sobre-box {
+  text-align: center;
+  padding: 0 40px;
+  margin: 60px 0;
+}
+.sobre-box i {
+  font-size: 60px;
+  padding-bottom: 25px;
+  color: var(--primaria);
+  transition: 0.5s;
+}
+.sobre-box:hover > i {
+  color: var(--hover);
+}
+/* ------------------------------------------- Fim sobre ---------------------------------------------------*/
+/* ----------------------------------------Cards catalágo ------------------------------------------------ */
+
+.box-catalago:last-child {
+  margin: 0 auto;
+}
+.box-catalago {
+  margin: 15px 0 15px 0;
+}
+.card {
+  display: flex;
+  justify-content: center;
+  height: 75vh;
+  box-shadow: 0 0 1em var(--cinza-ecuro);
+}
+
+.img-card {
+  display: block;
+  width: auto !important;
+  max-height: 250px;
+  margin: 10px auto;
+}
+.card-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.about-title {
+  font-size: 1.1em;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: var(--primaria);
+}
+/* ------------------------------------------- Footer ---------------------------------------------------*/
+#contact-area {
+  margin-top: 75px;
+  text-align: center;
+}
+#produtos {
+  background: linear-gradient(
+      221.96deg,
+      rgba(57, 172, 172, 0.47) 39.41%,
+      rgba(255, 255, 255, 0) 67.78%
+    ),
+    linear-gradient(
+      217.72deg,
+      rgba(57, 172, 172, 0.47) 0%,
+      rgba(255, 255, 255, 0) 47.25%
+    ),
+    linear-gradient(38.46deg, #004747 1.01%, rgba(255, 255, 255, 0) 67.63%),
+    #ffffff;
+  padding-bottom: 50px;
+}
+
+#contact-area::before,
+#produtos::before {
+  display: block;
+  content: " ";
+
+  height: 95px;
+  visibility: hidden;
+}
+.box-contato {
+  display: flex;
+  gap: 10px;
+  align-items: stretch;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.contact-box i {
+  color: var(--primaria);
+  border: 1px solid var(--primaria);
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+
+.contact-box p {
+  font-size: 1em;
+  margin-bottom: 3em;
+}
+.contact-box a:hover {
+  color: var(--hover);
+}
+.contact-title {
+  color: var(--primaria);
+}
+#contato {
+  display: flex;
+  text-align: left;
+  justify-content: center;
+}
+#contato input,
+#contato textarea {
+  width: 450px;
+}
+
+/* ------------------------------------------- Fim Footer ---------------------------------------------------*/
+
+/* ------------------------------------------- Copy area ---------------------------------------------------*/
+
+#copy-area {
+  background-color: var(--cinza-ecuro);
+  color: var(--cinza-claro);
+}
+#copy-area .container {
+  padding: 10px 0;
+  text-align: center;
+}
+#copy-area .container p {
+  font-size: 0.88rem;
+  margin-bottom: 0;
+  color: var(--texto);
+}
+#copy-area .container a {
+  color: var(--texto);
+}
+#copy-area .container a:hover {
+  color: var(--primaria);
+}
+/* ------------------------------------------- Copy area ---------------------------------------------------*/
+
+#whatsapp {
+  position: fixed;
+  bottom: 40px;
+  right: 20px;
+}
+#whatsapp i {
+  font-size: 4em;
+  color: var(--primaria);
+  transition: 0.5s;
+}
+#whatsapp i:hover {
+  color: #791;
+}
+/* ------------------------------- Page sobre ------------------------------- */
+
+#page-sobre img {
+  margin: 0 auto;
+  width: auto;
+}
+#page-sobre h1 {
+  text-align: center;
+  height: 65%;
+}
+.banner-sobre {
+  margin-bottom: 40px;
+}
+
+#page-sobre .sobre-box {
+  padding: 0 100px;
+}
+#page-sobre .sobre-box p {
+  text-align: justify;
+}
+#page-sobre .sobre-box:last-child {
+  max-width: 750px;
+  margin: 0 auto;
+}
+/* ------------------------------- Page produtos ------------------------------- */
+.produtos {
+  background: linear-gradient(
+      270deg,
+      #add09e 37.05%,
+      rgba(255, 255, 255, 0) 50%
+    ),
+    #ffffff;
+}
+
+.produtos .col-12 {
+  background: var(--cinza-ecuro);
+  padding: 15px 0 35px 0;
+}
+.produtos .col-12 h1,
+.produtos .col-12 p {
+  color: var(--texto-amarelo);
+  text-align: center;
+}
+.produtos .col-12 p {
+  text-align: left;
+  margin: 0 auto;
+  max-width: 750px;
+  min-width: 250px;
+}
+.folder #contact-area {
+  margin-top: 0;
+}
+.descricao {
+  color: var(--cinza-claro);
+}
+.descricao h2 {
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  font-weight: 900;
+  text-align: center;
+  margin-top: 2.2rem;
+}
+.descricao ul {
+  list-style: none;
+}
+.descricao ul li {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 1.1rem;
+  padding: 0.88rem 0;
+}
+.descricao i {
+  font-size: 1.5rem;
+  margin-right: 15px;
+}
+.img-folder img {
+  max-height: 450px;
+}
+.icon-dow {
+  font-size: 15rem;
+  display: flex;
+  align-content: center;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+.icon-dow i {
+  padding-bottom: 25px;
+  color: var(--primaria);
+  transition: 0.5s;
+}
+.icon-dow i:hover {
+  color: var(--hover);
+}
