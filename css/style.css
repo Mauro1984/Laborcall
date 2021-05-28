@@ -47,7 +47,7 @@ label {
   background-color: var(--cinza-ecuro);
 }
 #logo {
-  max-width: 150px;
+  max-width: 180px;
 }
 #nav-container .navbar-nav a {
   text-transform: uppercase;
@@ -62,31 +62,6 @@ label {
 #nav-container .navbar-nav a:hover {
   color: var(--primaria);
 }
-
-/* .visiv {
-  position: relative;
-}
-.ocuto {
-  display: block;
-  position: absolute;
-  padding-left: 0px;
-  left: 0;
-  top: 7vh;
-  box-shadow: 2px 2px 11px #000;
-  background-color: var(--cinza-ecuro);
-  z-index: 1;
-}
-
-.ocuto li {
-  list-style: none;
-  width: auto;
-  text-align: left;
-  padding-left: 0px;
-  margin-bottom: 10px;
-}
-
-.visiv:hover .ocuto {
-  display: inline-block; }       Caso seja feito o menu flutuante */
 
 /* ------------------------------------------- fim barra de navegação ---------------------------------------------------*/
 
@@ -228,15 +203,15 @@ label {
 #produtos {
   background: linear-gradient(
       221.96deg,
-      rgba(57, 172, 172, 0.47) 39.41%,
-      rgba(255, 255, 255, 0) 67.78%
+      rgba(57, 172, 172, 0.6) 39.41%,
+      rgba(255, 255, 255, 0.5) 67.78%
     ),
     linear-gradient(
       217.72deg,
-      rgba(57, 172, 172, 0.47) 0%,
-      rgba(255, 255, 255, 0) 47.25%
+      rgba(57, 172, 172, 0.6) 0%,
+      rgba(255, 255, 255, 0.5) 47.25%
     ),
-    linear-gradient(38.46deg, #004747 1.01%, rgba(255, 255, 255, 0) 67.63%),
+    linear-gradient(38.46deg, #004747 1.11%, rgba(255, 255, 255, 0.5) 67.63%),
     #ffffff;
   padding-bottom: 50px;
 }
@@ -418,4 +393,81 @@ label {
 }
 .icon-dow i:hover {
   color: var(--hover);
+}
+
+/*-------------------------------------- Ajustando o responsive ----------------------------------------- */
+
+@media (max-width: 1205px) {
+  .img-card {
+    max-height: 200px;
+  }
+}
+@media (max-width: 769px) {
+  #contato input,
+  #contato textarea {
+    width: 325px;
+  }
+
+  .box-contato {
+    flex-direction: column;
+  }
+  .text-slider p {
+    margin-bottom: 40px;
+  }
+  #page-sobre .sobre-box {
+    padding: 0px 15px;
+  }
+  #contact-area {
+    margin-top: 0px;
+  }
+  .img-card {
+    max-height: 130px;
+  }
+}
+
+@media (max-width: 425px) {
+  .h1,
+  h1 {
+    font-size: 1.5rem;
+  }
+  .carousel-caption {
+    position: absolute;
+    right: 15%;
+    left: 15%;
+    top: 15%;
+    z-index: 10;
+    color: #fff;
+    text-align: center;
+    font-size: 1rem;
+  }
+  #page-sobre h1 {
+    height: 10vh;
+  }
+  .main-title {
+    font-size: 1.5em;
+    margin-bottom: 60px;
+    text-align: center;
+  }
+  .main-title::after {
+    content: "";
+    top: 30px;
+  }
+  .text-slider {
+    position: absolute;
+    top: 15%;
+  }
+  #mainSlider img {
+    height: 340px;
+  }
+  .img-folder img {
+    max-height: 290px;
+  }
+  .icon-dow {
+    font-size: 10rem;
+    justify-content: center;
+  }
+  .produtos .col-12 p {
+    text-align: justify;
+    margin: 0 2rem;
+  }
 }
