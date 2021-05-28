@@ -81,7 +81,6 @@ label {
   );
 }
 #mainSlider {
-  /* background-image: url("../img/bg-slider.png"); */
   height: 500px;
 }
 #mainSlider img {
@@ -401,7 +400,14 @@ label {
   .img-card {
     max-height: 200px;
   }
+
+  #page-sobre h1 {
+    height: 50px;
+    position: absolute;
+    top: 15%;
+  }
 }
+
 @media (max-width: 769px) {
   #contato input,
   #contato textarea {
@@ -425,7 +431,7 @@ label {
   }
 }
 
-@media (max-width: 425px) {
+@media (max-width: 766px) {
   .h1,
   h1 {
     font-size: 1.5rem;
@@ -454,7 +460,10 @@ label {
   }
   .text-slider {
     position: absolute;
-    top: 15%;
+    bottom: 10%;
+  }
+  #mainSlider {
+    height: 550px;
   }
   #mainSlider img {
     height: 340px;
