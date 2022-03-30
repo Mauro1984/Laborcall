@@ -232,7 +232,8 @@ label {
   justify-content: space-between;
   flex-wrap: wrap;
 }
-.contact-box i {
+.contact-box i,
+.contact-box svg{
   color: var(--primaria);
   border: 1px solid var(--primaria);
   border-radius: 50%;
