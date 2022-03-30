@@ -152,13 +152,15 @@ label {
   padding: 0 40px;
   margin: 60px 0;
 }
-.sobre-box i {
+.sobre-box i,
+.sobre-box svg{
   font-size: 60px;
   padding-bottom: 25px;
   color: var(--primaria);
   transition: 0.5s;
 }
-.sobre-box:hover > i {
+.sobre-box:hover > i,
+.sobre-box >svg{
   color: var(--hover);
 }
 /* ------------------------------------------- Fim sobre ---------------------------------------------------*/
@@ -290,13 +292,11 @@ label {
   position: fixed;
   bottom: 40px;
   right: 20px;
-}
-#whatsapp i {
-  font-size: 4em;
+  font-size: 4rem;
   color: var(--primaria);
   transition: 0.5s;
 }
-#whatsapp i:hover {
+#whatsapp:hover {
   color: #791;
 }
 /* ------------------------------- Page sobre ------------------------------- */
